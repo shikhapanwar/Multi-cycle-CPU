@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/controller.xst" -ofn "/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/controller.syr" 

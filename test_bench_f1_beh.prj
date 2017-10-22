@@ -1,0 +1,3 @@
+verilog work "controller.v"
+verilog work "test_bench.v"
+verilog work "/home/shikha/14.7/ISE_DS/ISE//verilog/src/glbl.v"

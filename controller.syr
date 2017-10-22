@@ -1,0 +1,503 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "controller.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "controller"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-pq208
+
+---- Source Options
+Top Module Name                    : controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "controller.v" in library work
+Module <controller> compiled
+No errors in compilation
+Analysis of file <"controller.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <controller> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <controller>.
+WARNING:Xst:2323 - "controller.v" line 100: Parameter 2 is not constant in call of system task $display.
+"controller.v" line 100: $display : %d
+
+"controller.v" line 135: $display : state here =          2
+
+WARNING:Xst:2323 - "controller.v" line 186: Parameter 2 is not constant in call of system task $display.
+"controller.v" line 186: $display : currently at state%d
+
+WARNING:Xst:2323 - "controller.v" line 230: Parameter 2 is not constant in call of system task $display.
+"controller.v" line 230: $display : %d
+
+WARNING:Xst:2323 - "controller.v" line 270: Parameter 2 is not constant in call of system task $display.
+"controller.v" line 270: $display : %d
+
+WARNING:Xst:2323 - "controller.v" line 736: Parameter 2 is not constant in call of system task $display.
+"controller.v" line 736: $display : %d
+
+WARNING:Xst:2323 - "controller.v" line 776: Parameter 2 is not constant in call of system task $display.
+"controller.v" line 776: $display : %d
+
+WARNING:Xst:2323 - "controller.v" line 823: Parameter 2 is not constant in call of system task $display.
+"controller.v" line 823: $display : %d
+
+WARNING:Xst:2323 - "controller.v" line 862: Parameter 2 is not constant in call of system task $display.
+"controller.v" line 862: $display : %d
+
+WARNING:Xst:2323 - "controller.v" line 901: Parameter 2 is not constant in call of system task $display.
+"controller.v" line 901: $display : %d
+
+WARNING:Xst:2323 - "controller.v" line 939: Parameter 2 is not constant in call of system task $display.
+"controller.v" line 939: $display : %d
+
+Module <controller> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <y> in unit <controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <t_ir> in unit <controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <t_reg0> in unit <controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <t_reg1> in unit <controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <t_reg2> in unit <controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <t_reg3> in unit <controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <t_reg4> in unit <controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <t_reg5> in unit <controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <t_reg6> in unit <controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <t_reg7> in unit <controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <controller>.
+    Related source file is "controller.v".
+WARNING:Xst:653 - Signal <trans_x> is used but never assigned. This sourceless signal will be automatically connected to value 000.
+WARNING:Xst:646 - Signal <t_reg7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t_reg6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t_reg5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t_reg4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t_reg3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t_reg2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t_reg1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t_reg0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <or_> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <not_> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <neg_> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l_reg7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l_reg6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l_reg5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l_reg4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l_reg3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l_reg2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l_reg1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l_reg0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <inc_x> is used but never assigned. This sourceless signal will be automatically connected to value 001.
+WARNING:Xst:646 - Signal <fn_sel> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <dec_x> is used but never assigned. This sourceless signal will be automatically connected to value 010.
+WARNING:Xst:653 - Signal <add_> is used but never assigned. This sourceless signal will be automatically connected to value 011.
+    Register <t_mar> equivalent to <mem_active> has been removed
+    Found 1-bit register for signal <l_ir>.
+    Found 1-bit register for signal <l_mar>.
+    Found 1-bit register for signal <l_mdr>.
+    Found 1-bit register for signal <l_pc>.
+    Found 1-bit register for signal <l_sp>.
+    Found 1-bit register for signal <l_y>.
+    Found 1-bit register for signal <mem_active>.
+    Found 1-bit register for signal <rd_wr>.
+    Found 32-bit register for signal <state>.
+    Found 1-bit register for signal <t_mdr>.
+    Found 1-bit register for signal <t_pc>.
+    Found 1-bit register for signal <t_sp>.
+    Found 1-bit register for signal <cond>.
+    Summary:
+	inferred  44 D-type flip-flop(s).
+Unit <controller> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 13
+ 1-bit register                                        : 12
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <state_31> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_30> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_29> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_28> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_27> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_26> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_25> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_24> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_23> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_22> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_21> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_20> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_19> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_18> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_17> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_16> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_15> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_14> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_13> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_12> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_11> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_10> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_9> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_8> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_7> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_6> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_5> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <state_31> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_30> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_29> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_28> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_27> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_26> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_25> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_24> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_23> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_22> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_21> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_20> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_19> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_18> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_17> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_16> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_15> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_14> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_13> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_12> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_11> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_10> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_9> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_8> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_7> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_6> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_5> has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <controller> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block controller, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : controller.ngr
+Top Level Output File Name         : controller
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 63
+
+Cell Usage :
+# BELS                             : 81
+#      GND                         : 1
+#      LUT2                        : 8
+#      LUT2_D                      : 1
+#      LUT3                        : 18
+#      LUT3_D                      : 6
+#      LUT3_L                      : 3
+#      LUT4                        : 32
+#      LUT4_D                      : 2
+#      LUT4_L                      : 8
+#      MUXF5                       : 2
+# FlipFlops/Latches                : 17
+#      FD                          : 2
+#      FDE                         : 1
+#      FDS                         : 14
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 62
+#      IBUF                        : 16
+#      OBUF                        : 46
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-4 
+
+ Number of Slices:                       41  out of   3584     1%  
+ Number of Slice Flip Flops:             17  out of   7168     0%  
+ Number of 4 input LUTs:                 78  out of   7168     1%  
+ Number of IOs:                          63
+ Number of bonded IOBs:                  63  out of    141    44%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 17    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.477ns (Maximum Frequency: 133.743MHz)
+   Minimum input arrival time before clock: 10.421ns
+   Maximum output required time after clock: 8.229ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.477ns (frequency: 133.743MHz)
+  Total number of paths / destination ports: 287 / 32
+-------------------------------------------------------------------------
+Delay:               7.477ns (Levels of Logic = 3)
+  Source:            state_2 (FF)
+  Destination:       state_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: state_2 to state_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             24   0.720   2.136  state_2 (state_2)
+     LUT3_D:I0->O          4   0.551   1.256  cond_cmp_eq000011 (N11)
+     LUT2:I0->O            1   0.551   0.000  state_mux0000<29>21_G (N76)
+     MUXF5:I1->O           2   0.360   0.877  state_mux0000<29>21 (N7)
+     FDS:S                     1.026          state_2
+    ----------------------------------------
+    Total                      7.477ns (3.208ns logic, 4.269ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 81 / 9
+-------------------------------------------------------------------------
+Offset:              10.421ns (Levels of Logic = 7)
+  Source:            IR<3> (PAD)
+  Destination:       state_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: IR<3> to state_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   1.140  IR_3_IBUF (IR_3_IBUF)
+     LUT4:I0->O            1   0.551   1.140  state_cmp_eq00108 (state_cmp_eq00108)
+     LUT3:I0->O            3   0.551   0.975  state_cmp_eq001046 (state_cmp_eq0010)
+     LUT3:I2->O            1   0.551   1.140  state_mux0000<30>6 (state_mux0000<30>6)
+     LUT4:I0->O            1   0.551   0.827  state_mux0000<30>13_SW0 (N54)
+     LUT4:I3->O            1   0.551   0.869  state_mux0000<30>901_SW0 (N59)
+     LUT4:I2->O            1   0.551   0.000  state_mux0000<30>901 (state_mux0000<30>90)
+     FDS:D                     0.203          state_1
+    ----------------------------------------
+    Total                     10.421ns (4.330ns logic, 6.091ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              8.229ns (Levels of Logic = 1)
+  Source:            state_1 (FF)
+  Destination:       state<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: state_1 to state<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             34   0.720   1.865  state_1 (state_1)
+     OBUF:I->O                 5.644          state_1_OBUF (state<1>)
+    ----------------------------------------
+    Total                      8.229ns (6.364ns logic, 1.865ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 5.76 secs
+ 
+--> 
+
+
+Total memory usage is 512488 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   88 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

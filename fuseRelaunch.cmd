@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/test_bench_f1_isim_beh.exe" -prj "/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/test_bench_f1_beh.prj" "work.test_bench_f1" "work.glbl" 
