@@ -1,0 +1,3 @@
+verilog work "reg_bank_module.v"
+verilog work "register.v"
+verilog work "data_path.v"
