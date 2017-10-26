@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-10-23T02:07:13</DateModified>
+  <DateModified>2017-10-26T14:52:13</DateModified>
   <ModuleName>controller</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/iseconfig/controller.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/</ImplementationReportsDirectory>
   <DateInitialized>2017-10-23T02:07:13</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

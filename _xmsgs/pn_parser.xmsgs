@@ -11,8 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/controller.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/test_bench.v&quot; into library work</arg>
-</msg>
-
 </messages>
 
