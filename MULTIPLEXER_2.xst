@@ -1,0 +1,5 @@
+set -tmpdir "/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/xst/projnav.tmp"
+set -xsthdpdir "/home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/xst"
+elaborate
+-ifn MULTIPLEXER_2.prj
+-ifmt mixed

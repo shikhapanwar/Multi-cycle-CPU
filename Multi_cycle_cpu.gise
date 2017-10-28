@@ -22,7 +22,14 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Multi_cycle_cpu.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MULTIPLEXER_2.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MULTIPLEXER_2.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="MULTIPLEXER_2.xst"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu_module.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="alu_module.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="alu_module.xst"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="controller.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="controller.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="controller.ngc"/>
@@ -35,13 +42,38 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="controller_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="data_path.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="data_path.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="data_path.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="data_path.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="data_path.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="data_path.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="data_path.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="data_path_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="data_path_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="data_path_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reg_bank_module.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="reg_bank_module.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="reg_bank_module.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="register.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="register.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register_mdr.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="register_mdr.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="register_mdr.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="status_detection_module.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="status_detection_module.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="status_detection_module.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="status_detection_storage_selection_module.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="status_detection_storage_selection_module.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="status_detection_storage_selection_module.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="status_selection_module.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="status_selection_module.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="status_selection_module.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="status_storage_module.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="status_storage_module.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="status_storage_module.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_bench_f1_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_bench_f1_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_bench_f1_isim_beh.wdb"/>
@@ -138,11 +170,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1509029252" xil_pn:in_ck="-501317878332744195" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-7360510590969833517" xil_pn:start_ts="1509029248">
+    <transform xil_pn:end_ts="1509186108" xil_pn:in_ck="5651642813818421605" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-7360510590969833517" xil_pn:start_ts="1509186104">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="data_path.lso"/>
+      <outfile xil_pn:name="data_path.ngr"/>
       <outfile xil_pn:name="data_path.prj"/>
       <outfile xil_pn:name="data_path.syr"/>
       <outfile xil_pn:name="data_path.xst"/>

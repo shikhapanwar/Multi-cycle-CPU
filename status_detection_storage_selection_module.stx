@@ -1,0 +1,44 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/shikha/Document/Academics/Semester 5/coa_lab/Multi_cycle_cpu/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "status_storage_module.v" in library work
+Module <status_storage_module> compiled
+ERROR:HDLCompilers:207 - "status_storage_module.v" line 40 Signal 'reset' is not referenced in the module port list
+ERROR:HDLCompilers:26 - "status_storage_module.v" line 46 unexpected token: '<='
+Module <DFF> compiled
+ERROR:HDLCompilers:26 - "status_storage_module.v" line 46 expecting 'endmodule', found '~'
+Compiling verilog file "status_selection_module.v" in library work
+Compiling verilog file "status_detection_module.v" in library work
+Module <status_selection_module> compiled
+Compiling verilog file "status_detection_storage_selection_module.v" in library work
+Module <status_detection_module> compiled
+Module <status_detection_storage_selection_module> compiled
+Analysis of file <"status_detection_storage_selection_module.prj"> failed.
+--> 
+
+
+Total memory usage is 469768 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

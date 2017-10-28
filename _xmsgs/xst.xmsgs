@@ -5,55 +5,100 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompilers" num="208" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 21 </arg>Port reference &apos;<arg fmt="%s" index="2">t_reg</arg>&apos; was not declared as input, inout or output
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 36 </arg>Connection to input port &apos;<arg fmt="%s" index="2">reg_in</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="208" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 21 </arg>Port reference &apos;<arg fmt="%s" index="2">reg_no</arg>&apos; was not declared as input, inout or output
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 36 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="208" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 21 </arg>Port reference &apos;<arg fmt="%s" index="2">x</arg>&apos; was not declared as input, inout or output
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 37 </arg>Connection to input port &apos;<arg fmt="%s" index="2">reg_in</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="208" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 21 </arg>Port reference &apos;<arg fmt="%s" index="2">z</arg>&apos; was not declared as input, inout or output
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 38 </arg>Connection to input port &apos;<arg fmt="%s" index="2">reg_in</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="208" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 21 </arg>Port reference &apos;<arg fmt="%s" index="2">ld_reg</arg>&apos; was not declared as input, inout or output
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 39 </arg>Connection to input port &apos;<arg fmt="%s" index="2">z</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">reg_bank_module.v</arg>&quot; line <arg fmt="%d" index="2">22</arg> <arg fmt="%s" index="3">expecting &apos;endmodule&apos;, found &apos;{&apos;</arg>
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 39 </arg>Connection to output port &apos;<arg fmt="%s" index="2">x</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">reg_bank_module.v</arg>&quot; line <arg fmt="%d" index="2">36</arg> <arg fmt="%s" index="3">unexpected token: &apos;)&apos;</arg>
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 40 </arg>Connection to input port &apos;<arg fmt="%s" index="2">reg_in</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">reg_bank_module.v</arg>&quot; line <arg fmt="%d" index="2">39</arg> <arg fmt="%s" index="3">expecting &apos;*)&apos;, found &apos;;&apos;</arg>
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 40 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">reg_bank_module.v</arg>&quot; line <arg fmt="%d" index="2">39</arg> <arg fmt="%s" index="3">unexpected token: &apos;ld_5&apos;</arg>
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 41 </arg>Connection to input port &apos;<arg fmt="%s" index="2">reg_in</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="207" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 26 </arg>Signal &apos;<arg fmt="%s" index="2">ld_reg</arg>&apos; is not referenced in the module port list
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 41 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="207" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 26 </arg>Signal &apos;<arg fmt="%s" index="2">t_reg</arg>&apos; is not referenced in the module port list
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 42 </arg>Connection to input port &apos;<arg fmt="%s" index="2">x</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="207" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 27 </arg>Signal &apos;<arg fmt="%s" index="2">selector</arg>&apos; is not referenced in the module port list
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 42 </arg>Connection to input port &apos;<arg fmt="%s" index="2">y</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="207" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 27 </arg>Signal &apos;<arg fmt="%s" index="2">controller_fn</arg>&apos; is not referenced in the module port list
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 42 </arg>Connection to output port &apos;<arg fmt="%s" index="2">z</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="27" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 30 </arg>Illegal redeclaration of &apos;<arg fmt="%s" index="2">IR</arg>&apos;
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 44 </arg>Connection to input port &apos;<arg fmt="%s" index="2">z</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="207" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 41 </arg>Signal &apos;<arg fmt="%s" index="2">over</arg>&apos; is not referenced in the module port list
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 45 </arg>Connection to input port &apos;<arg fmt="%s" index="2">z</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="27" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 49 </arg>Illegal redeclaration of &apos;<arg fmt="%s" index="2">fn_sel</arg>&apos;
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 45 </arg>Connection to output port &apos;<arg fmt="%s" index="2">x</arg>&apos; does not match port size
 </msg>
 
-<msg type="error" file="HDLCompilers" num="27" delta="old" ><arg fmt="%s" index="1">&quot;data_path.v&quot; line 50 </arg>Illegal redeclaration of &apos;<arg fmt="%s" index="2">z</arg>&apos;
+<msg type="error" file="HDLCompilers" num="246" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 33 </arg>Reference to <arg fmt="%s" index="2">vector reg &apos;tmp_x&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 33 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; must be a net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="246" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 34 </arg>Reference to <arg fmt="%s" index="2">vector reg &apos;tmp_x&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 34 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; must be a net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="246" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 35 </arg>Reference to <arg fmt="%s" index="2">vector reg &apos;tmp_x&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 35 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; must be a net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="246" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 36 </arg>Reference to <arg fmt="%s" index="2">vector reg &apos;tmp_x&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 36 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; must be a net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="246" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 37 </arg>Reference to <arg fmt="%s" index="2">vector reg &apos;tmp_x&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 37 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; must be a net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="246" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 38 </arg>Reference to <arg fmt="%s" index="2">vector reg &apos;tmp_x&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 38 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; must be a net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="246" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 39 </arg>Reference to <arg fmt="%s" index="2">vector reg &apos;tmp_x&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 39 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; must be a net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="246" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 40 </arg>Reference to <arg fmt="%s" index="2">vector reg &apos;tmp_x&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="old" ><arg fmt="%s" index="1">&quot;reg_bank_module.v&quot; line 40 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg_out</arg>&apos; must be a net lvalue
 </msg>
 
 </messages>

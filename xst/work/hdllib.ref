@@ -1,1 +1,12 @@
-MO controller NULL controller.v vlg54/controller.bin 1508704648
+MO reg_bank_module NULL reg_bank_module.v vlg62/reg__bank__module.bin 1509186108
+MO data_path NULL data_path.v vlg5E/data__path.bin 1509186108
+MO status_storage_module NULL status_storage_module.v vlg35/status__storage__module.bin 1509186108
+MO status_selection_module NULL status_selection_module.v vlg2A/status__selection__module.bin 1509186108
+MO status_detection_storage_selection_module NULL status_detection_storage_selection_module.v vlg6C/status__detection__storage__selection__module.bin 1509186108
+MO register NULL register.v vlg29/register.bin 1509186108
+MO register_mdr NULL register_mdr.v vlg07/register__mdr.bin 1509186108
+MO controller NULL controller.v vlg54/controller.bin 1509178324
+MO MULTIPLEXER_2 NULL MULTIPLEXER_2.v vlg14/_m_u_l_t_i_p_l_e_x_e_r__2.bin 1509186108
+MO alu_module NULL alu_module.v vlg6B/alu__module.bin 1509186108
+MO DFF NULL status_storage_module.v vlg48/_d_f_f.bin 1509186108
+MO status_detection_module NULL status_detection_module.v vlg0F/status__detection__module.bin 1509186108

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: data_path.prj
@@ -107,36 +107,56 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "reg_bank_module.v" in library work
-ERROR:HDLCompilers:208 - "reg_bank_module.v" line 21 Port reference 't_reg' was not declared as input, inout or output
-ERROR:HDLCompilers:208 - "reg_bank_module.v" line 21 Port reference 'reg_no' was not declared as input, inout or output
-ERROR:HDLCompilers:208 - "reg_bank_module.v" line 21 Port reference 'x' was not declared as input, inout or output
-ERROR:HDLCompilers:208 - "reg_bank_module.v" line 21 Port reference 'z' was not declared as input, inout or output
-ERROR:HDLCompilers:208 - "reg_bank_module.v" line 21 Port reference 'ld_reg' was not declared as input, inout or output
-Module <reg_bank_module> compiled
-ERROR:HDLCompilers:26 - "reg_bank_module.v" line 22 expecting 'endmodule', found '{'
-ERROR:HDLCompilers:26 - "reg_bank_module.v" line 36 unexpected token: ')'
-ERROR:HDLCompilers:26 - "reg_bank_module.v" line 39 expecting '*)', found ';'
-ERROR:HDLCompilers:26 - "reg_bank_module.v" line 39 unexpected token: 'ld_5'
+Compiling verilog file "status_storage_module.v" in library work
+Module <status_storage_module> compiled
+Compiling verilog file "status_selection_module.v" in library work
+Module <DFF> compiled
+Compiling verilog file "status_detection_module.v" in library work
+Module <status_selection_module> compiled
 Compiling verilog file "register.v" in library work
-Compiling verilog file "data_path.v" in library work
+Module <status_detection_module> compiled
+Compiling verilog file "status_detection_storage_selection_module.v" in library work
 Module <register> compiled
-ERROR:HDLCompilers:207 - "data_path.v" line 26 Signal 'ld_reg' is not referenced in the module port list
-ERROR:HDLCompilers:207 - "data_path.v" line 26 Signal 't_reg' is not referenced in the module port list
-ERROR:HDLCompilers:207 - "data_path.v" line 27 Signal 'selector' is not referenced in the module port list
-ERROR:HDLCompilers:207 - "data_path.v" line 27 Signal 'controller_fn' is not referenced in the module port list
-ERROR:HDLCompilers:27 - "data_path.v" line 30 Illegal redeclaration of 'IR'
-ERROR:HDLCompilers:207 - "data_path.v" line 41 Signal 'over' is not referenced in the module port list
-ERROR:HDLCompilers:27 - "data_path.v" line 49 Illegal redeclaration of 'fn_sel'
-ERROR:HDLCompilers:27 - "data_path.v" line 50 Illegal redeclaration of 'z'
+Compiling verilog file "reg_bank_module.v" in library work
+Module <status_detection_storage_selection_module> compiled
+Compiling verilog file "register_mdr.v" in library work
+Module <reg_bank_module> compiled
+Compiling verilog file "MULTIPLEXER_2.v" in library work
+Module <register_mdr> compiled
+Compiling verilog file "alu_module.v" in library work
+Module <MULTIPLEXER_2> compiled
+Compiling verilog file "data_path.v" in library work
+Module <alu_module> compiled
 Module <data_path> compiled
-Analysis of file <"data_path.prj"> failed.
+No errors in compilation
+Analysis of file <"data_path.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+ERROR:HDLCompilers:246 - "reg_bank_module.v" line 33 Reference to vector reg 'tmp_x' is not a legal net lvalue
+ERROR:HDLCompilers:102 - "reg_bank_module.v" line 33 Connection to output port 'reg_out' must be a net lvalue
+ERROR:HDLCompilers:246 - "reg_bank_module.v" line 34 Reference to vector reg 'tmp_x' is not a legal net lvalue
+ERROR:HDLCompilers:102 - "reg_bank_module.v" line 34 Connection to output port 'reg_out' must be a net lvalue
+ERROR:HDLCompilers:246 - "reg_bank_module.v" line 35 Reference to vector reg 'tmp_x' is not a legal net lvalue
+ERROR:HDLCompilers:102 - "reg_bank_module.v" line 35 Connection to output port 'reg_out' must be a net lvalue
+ERROR:HDLCompilers:246 - "reg_bank_module.v" line 36 Reference to vector reg 'tmp_x' is not a legal net lvalue
+ERROR:HDLCompilers:102 - "reg_bank_module.v" line 36 Connection to output port 'reg_out' must be a net lvalue
+ERROR:HDLCompilers:246 - "reg_bank_module.v" line 37 Reference to vector reg 'tmp_x' is not a legal net lvalue
+ERROR:HDLCompilers:102 - "reg_bank_module.v" line 37 Connection to output port 'reg_out' must be a net lvalue
+ERROR:HDLCompilers:246 - "reg_bank_module.v" line 38 Reference to vector reg 'tmp_x' is not a legal net lvalue
+ERROR:HDLCompilers:102 - "reg_bank_module.v" line 38 Connection to output port 'reg_out' must be a net lvalue
+ERROR:HDLCompilers:246 - "reg_bank_module.v" line 39 Reference to vector reg 'tmp_x' is not a legal net lvalue
+ERROR:HDLCompilers:102 - "reg_bank_module.v" line 39 Connection to output port 'reg_out' must be a net lvalue
+ERROR:HDLCompilers:246 - "reg_bank_module.v" line 40 Reference to vector reg 'tmp_x' is not a legal net lvalue
+ERROR:HDLCompilers:102 - "reg_bank_module.v" line 40 Connection to output port 'reg_out' must be a net lvalue
 --> 
 
 
-Total memory usage is 488788 kilobytes
+Total memory usage is 501100 kilobytes
 
-Number of errors   :   17 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of errors   :   16 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

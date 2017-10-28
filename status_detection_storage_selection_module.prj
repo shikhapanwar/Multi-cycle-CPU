@@ -1,0 +1,4 @@
+verilog work "status_storage_module.v"
+verilog work "status_selection_module.v"
+verilog work "status_detection_module.v"
+verilog work "status_detection_storage_selection_module.v"

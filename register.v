@@ -29,12 +29,12 @@ module register(reg_in, ld, t, reg_out);  // 16 bit registers! , ld for load, an
 	always @(*)
 		begin
 			if(ld == 1)
-				assign reg_data = reg_in;
-			else assign reg_data = reg_data;
+				reg_data <= reg_in;
+			//else assign reg_data = reg_data;
 			
 			if(t == 1)
-				assign reg_out = reg_data;
-			else assign reg_data = reg_data;
+				reg_out <= reg_data;
+			//else assign reg_data = reg_data;
 			
 			
 		end
